@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+* {
+  box-sizing: boder-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #f3f5f7;
+  /* min-height: 100%; */
+}
+
+header {
+  width: auto;
+  height: 120px;
+  padding: 1rem;
+  background-image: linear-gradient(to right, #574ae8, #3ea1db);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .titles {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+header .titles a {
+  text-decoration: none;
+  color: white;
+}
+
+header .inputSearch {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+header .inputSearch input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
+  border: none;
+  color: white;
+}
+
+#search:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+#search::-webkit-input-placeholder {
+  color: white;
+  padding-left: 2px;
+  opacity: 0.6;
+}
+
+#btnSearch {
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur();
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+}
+
+/* Posts */
+
+.post {
+  width: 50%;
+  height: auto;
+  background-color: #ffffff;
+  margin: 20px auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.postTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.postTitle span {
+  font-size: 12px;
+}
+
+.postContent {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.postContent p {
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+footer {
+  background-color: #eceeef;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10px;
+}
